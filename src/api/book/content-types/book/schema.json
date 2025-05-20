@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "Book"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ISBN": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "Author": {
+      "type": "string",
+      "required": false
+    },
+    "is_borrowed": {
+      "type": "boolean",
+      "default": false
+    },
+    "child_name": {
+      "type": "string"
+    },
+    "child_group": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
